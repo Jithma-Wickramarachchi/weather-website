@@ -10,6 +10,7 @@ import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Calendar from './Calendar';
+import TodayForecast from './TodayForecast';
 
 const defaultTheme = createTheme();
 
@@ -41,18 +42,6 @@ export default function SignInSide() {
             display:'flex',
             backgroundPosition: 'center',
           }}>
-          <Grid sx={{
-            height: 320,
-            width: 334,
-            alignItems: "center",
-            justifyContent: "center",
-            margin:'auto',
-            borderRadius:'16px',
-            backgroundColor: (theme) =>
-              theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-          }}>
-            <Calendar />
-          </Grid>
         </Grid>
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
@@ -89,6 +78,9 @@ export default function SignInSide() {
               >
                 Search
               </Button>
+            </Box>
+            <Box>
+              <TodayForecast/>
             </Box>
           </Box>
         </Grid>
