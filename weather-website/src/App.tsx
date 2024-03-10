@@ -9,7 +9,6 @@ import Grid from '@mui/material/Grid';
 import CloudQueueIcon from '@mui/icons-material/CloudQueue';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Calendar from './Calendar';
 import TodayForecast from './TodayForecast';
 
 const defaultTheme = createTheme();
